@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.apphitlist/mcp",
+  "title": "AppHitlist",
+  "description": "App Store research: new winning apps, daily chart risers and new entries, revenue figures, complaints and Meta ads.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apphitlist.com/",
+  "icons": [
+    { "src": "https://apphitlist.com/icon2.png", "mimeType": "image/png", "sizes": ["512x512"] },
+    { "src": "https://apphitlist.com/icon1.png", "mimeType": "image/png", "sizes": ["192x192"] },
+    { "src": "https://apphitlist.com/icon.svg", "mimeType": "image/svg+xml", "sizes": ["any"] }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://apphitlist.com/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <API key from apphitlist.com/account>",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
