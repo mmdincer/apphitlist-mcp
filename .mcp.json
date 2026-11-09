@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "apphitlist": {
+      "type": "http",
+      "url": "https://apphitlist.com/api/mcp"
+    }
+  }
+}

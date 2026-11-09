@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "apphitlist",
+  "version": "1.0.0",
+  "description": "AppHitlist App Store research MCP: new winning apps, chart movers, revenue figures, Meta ads and review complaints.",
+  "author": {
+    "name": "Muhammet Mustafa Dincer",
+    "url": "https://github.com/mmdincer"
+  },
+  "homepage": "https://apphitlist.com",
+  "repository": "https://github.com/mmdincer/apphitlist-mcp",
+  "license": "MIT",
+  "keywords": [
+    "app-store",
+    "aso",
+    "mcp",
+    "market-research",
+    "mobile",
+    "apphitlist"
+  ]
+}
