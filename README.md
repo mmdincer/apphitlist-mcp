@@ -68,6 +68,16 @@ Revenue and download figures come from AppHitlist's own model. See the [pricing 
 
 [`skills/apphitlist/SKILL.md`](skills/apphitlist/SKILL.md) teaches an AI agent which tool to call for which question, how to chain them for niche discovery, competitor and ad research and complaint analysis, and how to read the output. Copy the `skills/apphitlist` folder into your agent's skills directory, for example `.claude/skills/` or `.cursor/skills/`.
 
+## Install as a plugin
+
+This repository is an [Agent Plugins](https://open-plugins.com/plugin-builders/specification) package: `plugin.json`, `mcp.json`, and the skill in `skills/apphitlist/`. Cursor Directory also reads [`.mcp.json`](.mcp.json). LobeHub reads [`lhm.plugin.json`](lhm.plugin.json).
+
+The committed MCP entry is URL-only: `https://apphitlist.com/api/mcp`. It has no API key and no `Authorization` header. OAuth and API keys stay in the client, as in the quick start above.
+
+```bash
+npx skills add mmdincer/apphitlist-mcp
+```
+
 ## Other
 
 - Not the server code: the MCP server runs inside the AppHitlist app and its source is not published here.

@@ -1,0 +1,128 @@
+{
+  "identifier": "apphitlist",
+  "name": "AppHitlist",
+  "version": "1.0.0",
+  "description": "AppHitlist App Store research MCP: find top-earning and newly winning apps, chart movers, long-running Meta ads, and review complaints.",
+  "author": "Muhammet Mustafa Dincer",
+  "authorUrl": "https://github.com/mmdincer",
+  "category": "productivity",
+  "cloudEndpoint": "https://apphitlist.com/api/mcp",
+  "homepage": "https://apphitlist.com",
+  "icon": "https://apphitlist.com/icon2.png",
+  "tags": [
+    "app-store",
+    "aso",
+    "mcp",
+    "market-research",
+    "mobile"
+  ],
+  "tools": [
+    {
+      "name": "find_new_winning_apps",
+      "description": "Apps released in the last 6 months that already earn $10K or more a month",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "limit": { "type": "number" }
+        }
+      }
+    },
+    {
+      "name": "find_top_earning_apps",
+      "description": "Highest-earning apps in one category or across all",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "limit": { "type": "number" }
+        }
+      }
+    },
+    {
+      "name": "find_chart_movers",
+      "description": "Daily chart risers and new entries across App Store countries",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "country": { "type": "string" },
+          "chart": { "type": "string" },
+          "category": { "type": "string" },
+          "days": { "type": "number" },
+          "date": { "type": "string" },
+          "limit": { "type": "number" }
+        }
+      }
+    },
+    {
+      "name": "search_apps",
+      "description": "Find an app or developer by name",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": { "type": "string" },
+          "limit": { "type": "number" }
+        },
+        "required": ["query"]
+      }
+    },
+    {
+      "name": "get_app",
+      "description": "One app by App Store URL, id or name",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "app": { "type": "string" }
+        },
+        "required": ["app"]
+      }
+    },
+    {
+      "name": "find_longest_running_ads",
+      "description": "Active Meta ads that have run the longest (Pro)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "limit": { "type": "number" }
+        }
+      }
+    },
+    {
+      "name": "get_app_ads",
+      "description": "Active Meta ads for one app (Pro)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "app": { "type": "string" },
+          "limit": { "type": "number" }
+        },
+        "required": ["app"]
+      }
+    },
+    {
+      "name": "get_app_complaints",
+      "description": "Complaint themes for one app from low-star reviews (Pro)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "app": { "type": "string" }
+        },
+        "required": ["app"]
+      }
+    },
+    {
+      "name": "get_category_complaints",
+      "description": "Common complaint topics in a category (Pro)",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "category": { "type": "string" },
+          "kind": { "type": "string" },
+          "limit": { "type": "number" }
+        },
+        "required": ["category"]
+      }
+    }
+  ]
+}
