@@ -1,5 +1,7 @@
 # AppHitlist MCP
 
+<a href="https://www.producthunt.com/posts/apphitlist-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-apphitlist-2" target="_blank" rel="noopener noreferrer"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1329625&theme=light" alt="AppHitlist - Find apps that already make money before you build | Product Hunt" width="250" height="54" /></a>
+
 Connect Claude, Cursor and other MCP clients to [AppHitlist](https://apphitlist.com/?utm_source=github&utm_medium=repo&utm_campaign=apphitlist-mcp&utm_content=readme-intro), an App Store research tool for indie developers. Ask your assistant which new apps already earn money, which apps are climbing the daily charts, how long an app's Meta ads have been running, and what users complain about.
 
 AppHitlist exposes a **remote MCP server**. There is nothing to install or run locally. This repository holds the setup guide, the tool reference and an agent skill. It is not the server source code. There is no REST API; MCP is the programmatic interface.
